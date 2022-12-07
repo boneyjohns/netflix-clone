@@ -43,7 +43,7 @@ class Maincard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          image: const DecorationImage(
+          image: DecorationImage(
             image: NetworkImage(imageurl),
             fit: BoxFit.cover,
           ),
