@@ -19,3 +19,10 @@ TextStyle khometitle =
     const TextStyle(fontSize: 14, fontWeight: FontWeight.bold);
 const knewandhottempimage =
     'https://www.themoviedb.org/t/p/w533_and_h300_bestv2/r60nF76y6Lw3A82Og9bdyRzuo1E.jpg';
+
+const knewandhottempimage2 =
+    'https://www.themoviedb.org/t/p/original/wZVluw8j7i7TPsrrh7yhSE0ekCc.jpg';
+
+const kheight50 = SizedBox(
+  height: 50,
+);

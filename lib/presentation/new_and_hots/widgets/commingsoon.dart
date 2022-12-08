@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix/core/colors/colors.dart';
 import 'package:netflix/core/contants.dart';
 import 'package:netflix/presentation/home/widget/custombutton.dart';
+import 'package:netflix/presentation/new_and_hots/widgets/videowidget.dart';
 
 class Commingsoonwidget extends StatelessWidget {
   const Commingsoonwidget({
@@ -42,34 +43,7 @@ class Commingsoonwidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Stack(
-                children: [
-                  SizedBox(
-                    width: double.infinity,
-                    height: 200,
-                    child: Image.network(
-                      knewandhottempimage,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  Positioned(
-                    right: 10,
-                    bottom: 10,
-                    child: CircleAvatar(
-                      radius: 20,
-                      backgroundColor: Colors.black.withOpacity(0.5),
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.volume_off,
-                          color: kwhite,
-                          size: 30,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              const Videowidget(),
               Row(
                 //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -103,12 +77,12 @@ class Commingsoonwidget extends StatelessWidget {
               ),
               const Text('Coming on Friday'),
               kheight,
-              Text(
+              const Text(
                 'Tall Girl 2',
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               kheight,
-              Text(
+              const Text(
                 'Leading the lead in the school music is a dream come true for Jodi, until the pressure sends her confidence - and her relationship - into a tailspain.',
                 style: TextStyle(
                     fontSize: 18,
