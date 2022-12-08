@@ -11,3 +11,8 @@ const kheight20 = SizedBox(
 );
 
 BorderRadius kradius10 = BorderRadius.circular(10);
+const kmainimage =
+    'https://www.themoviedb.org/t/p/original/dykBmRQu2WCBpBtYcKEgAPWPQbv.jpg';
+
+TextStyle khometitle =
+    const TextStyle(fontSize: 14, fontWeight: FontWeight.bold);
