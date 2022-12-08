@@ -2,13 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:netflix/core/colors/colors.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({
-    Key? key,
-    required this.icon,
-    required this.title,
-  }) : super(key: key);
+  const CustomButton(
+      {Key? key,
+      required this.icon,
+      required this.title,
+      this.iconsize = 30,
+      this.textsize = 18})
+      : super(key: key);
   final IconData icon;
   final String title;
+  final double iconsize;
+  final double textsize;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -16,11 +20,11 @@ class CustomButton extends StatelessWidget {
         Icon(
           icon,
           color: kwhite,
-          size: 30,
+          size: iconsize,
         ),
         Text(
           title,
-          style: TextStyle(fontSize: 18),
+          style: TextStyle(fontSize: textsize),
         )
       ],
     );
